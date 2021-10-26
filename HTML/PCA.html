@@ -65,7 +65,8 @@
                         .attr("x", function (d) { return xScale(d.var); })  //x scale created earlier and pass the year value from our data.
                         .attr("y", function (d) {return yScale(d.value)})
                         .attr("width", xScale.bandwidth())
-                        .attr("height", function (d) { return height - yScale(d.value); });
+                        .attr("height", function (d) { return height - yScale(d.value); })
+                        .attr("fill", '#69b3a2')
                 
 
         

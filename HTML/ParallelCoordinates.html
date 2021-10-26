@@ -32,9 +32,9 @@
 
         // Parse the Data
         d3.csv("/Data/sortedCols.csv").then(function (data) {
-
+            
             // Extract the list of dimensions we want to keep in the plot. Here I keep all except the column called Species
-            dimensions = Object.keys(data[0]).filter(function (d) { return d != "Species" })
+            dimensions = Object.keys(data[0]).filter(function (d) { return d != "" })
 
             // For each dimension, I build a linear scale. I store all in a y object
             const y = {}
